@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&family=Readex+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bowlby+One+SC&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+/* TROCA DE TEMA */
+
+body[data-theme="t-light"] {
+    --color-bg: white;
+    --color-text: black;
+}
+
+body[data-theme="t-dark"] {
+    --color-bg: black;
+    --color-text: white;
+}
+
+
+/* FIM */
+
+body {
+    background-color: var(--color-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden !important;
+}
+
+
+/*HEADER*/
+
+.navbar {
+    background-color: black;
+}
+
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13pt;
+}
+
+#logo {
+    width: 45px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+#menu {
+    padding-left: 30px;
+    color: white;
+}
+
+#menu:hover {
+    color: gray;
+}
+
+#logout {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+}
+
+.dropdown-menu li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#logout:hover {
+    color: #ad1e1e;
+}
+
+#pesquisar {
+    display: none;
+}
+
+#carrinho {
+    display: none;
+}
+
+#usuario {
+    background-color: transparent;
+}
+
+.mensagem {
+    display: none;
+    position: fixed;
+    width: 260px;
+    right: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-text);
+}
+
+#tema {
+    display: none;
+}
+
+#temadesk {
+    display: block;
+}
+
+
+/*CONTEUDO*/
+
+.banner {
+    width: 100%;
+    height: 700px;
+}
+
+#imgbanner {
+    margin-left: -15px;
+    margin-right: -13px;
+}
+
+#entrar {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#inscrevase {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.TextBanner {
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+}
+
+#BarraBuscar {
+    width: 90%;
+    margin-right: 0px;
+    border-radius: 5px;
+    display: inline;
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+.listaProdutos {
+    display: inline;
+    border: 1px solid red;
+    width: 180px !important;
+    height: 200px;
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+}
+
+#z-points {
+    width: 300px;
+    height: 250px;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.card {
+    margin: 10px auto 10px auto;
+    width: 13rem;
+}
+
+.card a {
+    text-align: center;
+}
+
+#imgLoja {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#botaoCarrinho {
+    display: inline;
+    width: 50px;
+    height: 35px;
+}
+
+.carrinhocompra {
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(65, 64, 64);
+    padding: 11px;
+}
+
+.banner-loja-mobile {
+    display: none;
+}
+
+#buttonloja {
+    width: 140px;
+}
+
+#comprar {
+    margin-bottom: 4px;
+    width: 100px;
+}
+
+.labelFiltro {
+    display: inline;
+}
+
+#input1 {
+    margin-left: 5px;
+}
+
+.inputFiltro {
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    width: 232px;
+}
+
+.inputFiltro::placeholder {
+    color: gray;
+}
+
+.col-5 {
+    width: 100%;
+}
+
+
+/*FOOTER*/
+
+footer {
+    bottom: 0;
+    margin-top: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: -60px;
+    background-color: rgb(141, 141, 141);
+    color: black;
+}
+
+#colorblack {
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #ad1e1e;
+}
+
+table {
+    margin: auto;
+    border-spacing: 0;
+}
+
+.rodapelinks td {
+    width: 250px;
+}
+
+table tr {
+    margin-bottom: -20px;
+}
+
+.iconrodape {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.plataforma {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+#copyrite {
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 40px;
+}
+
+#subfooter {
+    padding-bottom: 10px;
+}
+
+#iconeTopo {
+    position: absolute;
+    margin-top: 295px;
+    margin-left: 40px;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+}
+
+.heightfooter {
+    padding: 40px;
+    height: 220px !important;
+}
+
+.MobileFooter {
+    display: none;
+}
+
+
+/*SCROOLBAR*/
+
+ ::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+ ::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+@media(max-width:500px) {
+    table img {
+        display: none;
+    }
+    .img-fluid {
+        min-width: 300px;
+    }
+    #usuario {
+        margin-bottom: 10px;
+    }
+    .banner {
+        display: none;
+    }
+    .username {
+        margin-top: 20px;
+        margin-right: 10px;
+        width: 100%;
+        float: right;
+    }
+    #pesquisar {
+        display: block;
+        color: white;
+        margin-top: -60px;
+        margin-left: 30px;
+    }
+    #carrinho {
+        display: block;
+        color: white;
+        margin-top: -27px;
+        margin-left: 30px;
+        margin-bottom: -7px;
+    }
+    .car {
+        margin-top: 40px;
+        margin-left: -105px;
+    }
+    .search {
+        display: none;
+        margin-left: 25px;
+    }
+    .menulink {
+        text-decoration: none;
+    }
+    .btn-group {
+        margin-right: -1px !important;
+    }
+    footer {
+        display: none;
+    }
+    .MobileFooter {
+        margin-top: 50px;
+        padding-top: 20px;
+        display: block;
+        background-color: rgb(141, 141, 141);
+        text-align: center;
+    }
+    .rodapelinks a {
+        text-decoration: none;
+        color: black;
+    }
+    .rodapelinks a:hover {
+        color: #ad1e1e;
+    }
+    .banenrMobile {
+        width: 100%;
+        height: 500px;
+        display: block;
+    }
+    .card {
+        margin: 10px auto 10px auto;
+        width: 11rem;
+    }
+    #iconeTopo {
+        display: none;
+    }
+    #tema {
+        display: block;
+        margin-left: 30px;
+        color: white;
+        margin-bottom: 15px;
+    }
+    #temadesk {
+        display: none;
+    }
+    .banner-loja-mobile {
+        margin-top: 60px;
+        display: block;
+    }
+    .TextBanner {
+        display: none;
+    }
+    .card-body {
+        width: 200px;
+        margin-left: -20px;
+    }
+    #AcessoMobile {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-left: 30px;
+    }
+}

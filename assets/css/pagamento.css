@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+}
+
+.container {
+    border: 1px solid gray;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 20px 0px 20px 0px;
+}
+
+.dadosProduto {
+    border-right: 1px solid gray;
+}
+
+#boacompra {
+    margin-top: -50px;
+}
+
+.forma1 {
+    display: none;
+    margin-top: 20px;
+}
+
+.forma2 {
+    display: none;
+    margin-top: 20px;
+}
+
+.forma3 {
+    display: none;
+    margin-top: 20px;
+}
+
+@media(max-width:500px) {
+    .container {
+        border: none;
+    }
+    .dadosProduto {
+        border-right: none;
+    }
+}

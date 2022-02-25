@@ -1,0 +1,26 @@
+/* inicio: Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    /* cor do background que vai ocupar o body */
+    z-index: 99999999;
+    /* z-index para jogar para frente e sobrepor tudo */
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    /* centralizar a parte interna do preload (onde fica a anima��o)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&family=Readex+Pro:wght@500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
