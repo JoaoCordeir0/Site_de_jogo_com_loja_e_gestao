@@ -328,6 +328,14 @@ body {
     display: none;
 }
 
+.titlepage {
+    text-align: center;
+}
+
+.titlepage i {
+    color: #11101d;
+}
+
 #conteudo #myChart {
     margin-top: 30px;
 }
