@@ -26,10 +26,10 @@
             <li id="linha">
                 <a href="">
                     <i class='bx bxs-bell-ring'></i>
-                    <span class="link_name">Notifica��es</span>
+                    <span class="link_name">Notificações</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="">Notifica��es</a></li>
+                    <li><a class="link_name" href="">Notificações</a></li>
                 </ul>
             </li>
         </span>
@@ -103,6 +103,15 @@
             </a>
             <ul class="sub-menu blank">
                 <li><a class="link_name" href="acesso">Acessos</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="galeria">
+                <i class='bx bxs-photo-album'></i>
+                <span class="link_name">Galeria</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="galeria">Galeria</a></li>
             </ul>
         </li>
         <li>

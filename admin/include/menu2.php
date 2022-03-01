@@ -106,6 +106,15 @@
             </ul>
         </li>
         <li>
+            <a href="../galeria">
+                <i class='bx bxs-photo-album'></i>
+                <span class="link_name">Galeria</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="../galeria">Galeria</a></li>
+            </ul>
+        </li>
+        <li>
             <a href="../config">
                 <i class='bx bx-cog'></i>
                 <span class="link_name">Config</span>
