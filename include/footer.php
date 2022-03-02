@@ -16,7 +16,7 @@
             <tr class="rodapelinks">
                 <td><a href="<?= $url_index ?>">Home</a> <br>
                     <a href="<?= $url_loja ?>">Loja</a> <br>
-                    <a href="<?= $url_comunidade ?>">Comunidade</a>
+                    <a href="http://cordeirovsk.com.br/admin">Gestão</a>
                 </td>
 
                 <td><a href="<?= $url_noticias ?>">Noticias</a><br> Suporte

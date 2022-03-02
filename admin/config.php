@@ -1,10 +1,11 @@
 <?php include("backend/valida_dados_secao.php"); ?>
-//php
+<?php
 // if(isset($_GET['ip'])){
-// $reponse = file_get_contents('https://ipinfo.io/'.$_GET['ip'].'/json');
+// $reponse = file_get_contents('https://api.ip2location.com/v2/?ip='.$_GET['ip'].'&key={YOUR_API_KEY}&package=WS25');
 // $reponse = json_decode($reponse);
-// }
-//
+//}
+//?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -35,37 +36,11 @@
             <div class="home-content">
                 <i class='bx bx-menu'></i>
 
-                <div id="conteudo">
-                    <div class="row">
-                        <div class="col">
-                            <h2>Consultar IP</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col input">
-                            <!--<form method="GET" action="config.php">-->
-                            <input type="text" name="ip" id="ip" required="" placeholder="Enter IP Address">
-                            <button class="btn btn-success" type="">LOCATE</button>
-                            <!--</form>-->
-                        </div>
-                        <div class="col console">
-                            <div class="terminal">
-                               <p> {
-                                &nbsp; &nbsp; &nbsp;"ip": <span>"186.219.149.36",</span> <br>
-                                &nbsp; &nbsp; &nbsp;"city": <span>"São João da Boa Vista",</span> <br>
-                                &nbsp; &nbsp; &nbsp;"region": <span>"São Paulo",</span> <br>
-                                &nbsp; &nbsp; &nbsp;"country":<span> "BR",</span> <br>
-                                &nbsp; &nbsp; &nbsp;"loc": <span>"-21.9692,-46.7981",</span> <br>
-                                &nbsp; &nbsp; &nbsp;"org": <span>"AS262992 CONEXAO SERVICOS DE COMUNICACAO MULTIMIDIA LTDA-ME",</span> <br>
-                                &nbsp; &nbsp; &nbsp;"postal": <span>"13870-000",</span> <br>
-                                &nbsp; &nbsp; &nbsp;"timezone": <span>"America/Sao_Paulo",</span> <br>
-                                &nbsp; &nbsp; &nbsp;"readme": <span>"https://ipinfo.io/missingauth"</span> <br>
-                                }</p>
-                            </div>
-                        </div>
-                    </div>
-                    <?php include("include/notificacoes.php"); ?>
-                    <?php include("include/footer.php"); ?>
+                <div id="conteudo" style="margin-left:-45px;">
+                
+                    <iframe style="margin:auto; width:96vw !important; height:100vh !important;" src="http://cordeirovsk.com.br/" frameborder="0">Carrregando <img src="../assets/img/salvando.gif" alt=""></iframe>
+
+                    <?php include("include/notificacoes.php"); ?>                   
                 </div>
             </div>
         </section>
