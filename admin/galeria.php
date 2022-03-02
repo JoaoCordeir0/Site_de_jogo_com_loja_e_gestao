@@ -43,7 +43,7 @@
                                 <div class="card" style="width: 18rem;">
                                     <img src="../assets/img/imgperfil/<?php echo $fotos['nome_img'] ?>" class="card-img-top" title="Imagem de perfil" style="max-width:170px; max-height:150px;">
                                     <div class="card-body" style="margin: auto;">
-                                        <a title="Definir como foto de perfil" href="backend/alteraFTperfil?foto=<?php echo $fotos['nome_img'];?>" class="btn btn-success"><i class='bx bx-show'></i> <i class='bx bxs-user' ></i></a>  <a download="" href="../assets/img/imgLoja/<?php echo $fotos['nome_img'] ?>" class="btn btn-success"> <i class='bx bx-download'></i> </a>  <a href="backend/apagaFTperfil?apagarFoto=<?php echo $fotos['id'] ?>" class="btn btn-danger"><i class='bx bxs-trash'></i></a>
+                                        <a title="Definir como foto de perfil" href="backend/alteraFTperfil?foto=<?php echo $fotos['nome_img'];?>" class="btn btn-success"><i class='bx bx-show'></i> <i class='bx bxs-user' ></i></a>  <a download="../assets/img/imgperfil/<?php echo $fotos['nome_img'] ?>" href="../assets/img/imgperfil/<?php echo $fotos['nome_img'] ?>" class="btn btn-success"> <i class='bx bx-download'></i> </a>  <a href="backend/apagaFTperfil?apagarFoto=<?php echo $fotos['id'] ?>" class="btn btn-danger"><i class='bx bxs-trash'></i></a>
                                     </div>
                                 </div>
                             </div>                      
@@ -61,7 +61,7 @@
                                 <div class="card" style="width: 18rem;">
                                     <img src="../assets/img/imgLoja/<?php echo $fotos['nome_img'] ?>" class="card-img-top" title="Imagem da loja" style="max-width:170px; max-height:150px;">
                                     <div class="card-body" style="margin: auto;">
-                                        <a download="" href="../assets/img/imgLoja/<?php echo $fotos['nome_img'] ?>" class="btn btn-success"> <i class='bx bx-download'></i> </a> <a href="backend/apagaFTperfil?apagarFoto=<?php echo $fotos['id'] ?>" class="btn btn-danger"><i class='bx bxs-trash'></i></a>
+                                        <a download="../assets/img/imgLoja/<?php echo $fotos['nome_img'] ?>" href="../assets/img/imgLoja/<?php echo $fotos['nome_img'] ?>" class="btn btn-success"> <i class='bx bx-download'></i> </a> <a href="backend/apagaFTperfil?apagarFoto=<?php echo $fotos['id'] ?>" class="btn btn-danger"><i class='bx bxs-trash'></i></a>
                                     </div>
                                 </div>
                             </div>                      
@@ -79,7 +79,7 @@
                                 <div class="card" style="width: 18rem;">
                                     <img src="../assets/img/<?php echo $fotos['nome_img'] ?>" class="card-img-top" title="Imagem do site" style="max-width:170px; max-height:150px;">
                                     <div class="card-body" style="margin: auto;">
-                                        <a download="" href="../assets/img/imgLoja/<?php echo $fotos['nome_img'] ?>" class="btn btn-success"> <i class='bx bx-download'></i> </a> <a href="backend/apagaFTperfil?apagarFoto=<?php echo $fotos['id'] ?>" class="btn btn-danger"><i class='bx bxs-trash'></i></a>
+                                        <a download="../assets/img/<?php echo $fotos['nome_img'] ?>" href="../assets/img/<?php echo $fotos['nome_img'] ?>" class="btn btn-success"> <i class='bx bx-download'></i> </a> <a href="backend/apagaFTperfil?apagarFoto=<?php echo $fotos['id'] ?>" class="btn btn-danger"><i class='bx bxs-trash'></i></a>
                                     </div>
                                 </div>
                             </div>                      
