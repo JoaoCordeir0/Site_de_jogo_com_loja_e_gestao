@@ -11,28 +11,9 @@
             echo 'Galeria'; ?></title>
 
     <link rel="stylesheet" href="../assets/css/gestao.css">
-
-    <style>
-        .galeria {
-            max-width: 100vw;            
-            margin-top: 600px;
-        }
-
-        .card {
-            width: 150px;
-            height: 240px;
-            background-color: #e4e9f7;
-            margin: 20px;
-        }
-
-        .card img {
-            width: 170px;
-            height: 170px;
-        }
-    </style>
 </head>
 
-<body>  
+<body>
     <div class="pagina">
         <!-- inicio do preloader -->
         <div id="preloader">
@@ -50,29 +31,62 @@
                 <i class='bx bx-menu'></i>
 
                 <div id="conteudo">
-                    <!--Conteudo-->
-                    <div class="galeria">
-                        <div class="row">
-                            <?php
-                            $galeria = $conexao->prepare("SELECT * FROM usuarios WHERE imgPerfil != 'default.png'");
-                            $galeria->execute();
 
-                            while ($fotos = $galeria->fetch(PDO::FETCH_ASSOC)) : ?>
-                                <div class="col">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="../assets/img/imgperfil/<?php echo $fotos['imgPerfil'] ?>" class="card-img-top" title="Imagem de perfil" style="max-width:170px;">
-                                        <div class="card-body">
-                                            <a href="backend/alteraFTperfil.php?id=<?php echo $id?>?foto=<?php echo $fotos['imgPerfil'];?>" class="btn btn-success d-flex justify-content-center">Definir como perfil</a>
-                                        </div>
+                    <div class="row">
+                        <h3 id="H3_banco_imagens"> <i class="bx bxs-photo-album"></i> Banco de imagens do perfil</h3>
+                        <?php
+                        $galeria = $conexao->prepare("SELECT * FROM galeria WHERE caminho = 1");
+                        $galeria->execute();
+
+                        while ($fotos = $galeria->fetch(PDO::FETCH_ASSOC)) : ?>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../assets/img/imgperfil/<?php echo $fotos['nome_img'] ?>" class="card-img-top" title="Imagem de perfil" style="max-width:170px; max-height:150px;">
+                                    <div class="card-body" style="margin: auto;">
+                                        <a href="backend/alteraFTperfil?foto=<?php echo $fotos['nome_img'];?>" class="btn btn-success">Definir como perfil</a> <a href="backend/apagaFTperfil?apagarFoto=<?php echo $fotos['id'] ?>" class="btn btn-danger"><i class='bx bxs-trash'></i></a>
                                     </div>
                                 </div>
-                            <?php endwhile ?>
-                        </div>
-                        <!--Fim-->
+                            </div>                      
+                        <?php endwhile ?>
                     </div>
 
+                    <div class="row">
+                        <h3 id="H3_banco_imagens"> <i class="bx bxs-photo-album"></i> Banco de imagens da loja</h3>
+                        <?php
+                        $galeria = $conexao->prepare("SELECT * FROM galeria WHERE caminho = 2");
+                        $galeria->execute();
+
+                        while ($fotos = $galeria->fetch(PDO::FETCH_ASSOC)) : ?>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../assets/img/imgLoja/<?php echo $fotos['nome_img'] ?>" class="card-img-top" title="Imagem da loja" style="max-width:170px; max-height:150px;">
+                                    <div class="card-body" style="margin: auto;">
+                                        <!--<a href="backend/alteraFTperfil?foto=<?php echo $fotos['nome_img'];?>" class="btn btn-success">Definir como perfil</a>--> <a href="backend/apagaFTperfil?apagarFoto=<?php echo $fotos['id'] ?>" class="btn btn-danger"><i class='bx bxs-trash'></i></a>
+                                    </div>
+                                </div>
+                            </div>                      
+                        <?php endwhile ?>
+                    </div>
+                    
+                    <div class="row">
+                        <h3 id="H3_banco_imagens"> <i class="bx bxs-photo-album"></i> Banco de imagens do site</h3>
+                        <?php
+                        $galeria = $conexao->prepare("SELECT * FROM galeria WHERE caminho = 0");
+                        $galeria->execute();
+
+                        while ($fotos = $galeria->fetch(PDO::FETCH_ASSOC)) : ?>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../assets/img/<?php echo $fotos['nome_img'] ?>" class="card-img-top" title="Imagem do site" style="max-width:170px; max-height:150px;">
+                                    <div class="card-body" style="margin: auto;">
+                                        <!--<a href="backend/alteraFTperfil?foto=<?php echo $fotos['nome_img'];?>" class="btn btn-success">Definir como perfil</a>--> <a href="backend/apagaFTperfil?apagarFoto=<?php echo $fotos['id'] ?>" class="btn btn-danger"><i class='bx bxs-trash'></i></a>
+                                    </div>
+                                </div>
+                            </div>                      
+                        <?php endwhile ?>
+                    </div>                
+
                     <?php include("include/notificacoes.php"); ?>
-                    <?php include("include/footer.php"); ?>
                 </div>
             </div>
         </section>
@@ -82,6 +96,8 @@
     <script src="js/menu.js"></script>
     <script src="js/relogio.js"></script>
     <script src="../assets/js/preloader.js"></script>
+    <script src="../assets/js/sweetalert.js"></script>
+    <?php include("functions/alerts.php");?> 
 </body>
 
 </html>

@@ -26,7 +26,8 @@ if(isset($_FILES['imgperfil'])) {
 		$uploadfile = $pasta . basename($cod);
 
 		if(move_uploaded_file($tmp_name, $uploadfile)){		
-			$up = "UPDATE usuarios SET imgPerfil = '$cod'  WHERE ID = '$idgestao'";	$resultado_usuario = mysqli_query($conn, $up);	
+			$up1 = "UPDATE usuarios SET imgPerfil = '$cod'  WHERE ID = '$idgestao'";	$resultado_usuario = mysqli_query($conn, $up1);	
+			$up2 = "INSERT INTO galeria (nome_img, caminho) VALUES ('$cod', '1')"; $result = mysqli_query($conn, $up2);	
 		}
 	}	
 }

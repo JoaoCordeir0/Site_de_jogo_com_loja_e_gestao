@@ -16,7 +16,7 @@ if (!$conn) {
 
 if (isset($_COOKIE["Identifica_user"])) {
     if (isset($produto) && isset($cor) && isset($preco) && isset($qtd) && isset($status) && isset($desc)) {
-        $sql = "INSERT INTO loja (produto, corProduto, qtdProduto, preco, status, descricao) VALUES ('$produto', '$cor', '$qtd', '$preco', '$status', '$desc')";
+        $sql = "INSERT INTO loja (produto, corProduto, qtdProduto, preco, status, descricao) VALUES ('$produto', '$cor', '$qtd', '$preco', '$status', '$desc')";      
         if (mysqli_query($conn, $sql)) {
             if (isset($_FILES['imgloja'])) {
 
@@ -36,6 +36,8 @@ if (isset($_COOKIE["Identifica_user"])) {
                     if (move_uploaded_file($tmp_name, $uploadfile)) {                       
                         $up = "UPDATE loja SET imgProduto = '$cod' ORDER BY id DESC LIMIT 1";  
                             $query = mysqli_query($conn, $up);
+                        $galeria = "INSERT INTO galeria (nome_img, caminho) VALUES ('$cod', '2')"; 
+                            $result = mysqli_query($conn, $galeria);	
                     } else {
                         print "Não foi possivel carregar o arquivo" . $nome;
                     }

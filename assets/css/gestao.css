@@ -467,6 +467,29 @@ body {
     padding-bottom: 2px;
 }
 
+#conteudo {
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.card {
+    width: 150px;
+    height: 240px;
+    background-color: #e4e9f7;
+    margin: 20px;
+}
+
+.card img {
+    width: 170px;
+    height: 170px;
+}
+
+#H3_banco_imagens {
+    text-align: center;
+    color: #11101d;
+    margin-top: 20px;
+}
+
 @media (max-width: 590px) {
     #icons {
         display: none;
